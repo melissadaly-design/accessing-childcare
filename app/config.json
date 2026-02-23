@@ -1,0 +1,9 @@
+{
+  "serviceName": "Check what help you could get with childcare costs",
+  "useServiceNavigation": true,
+  "plugins": {
+    "govuk-frontend": {
+      "rebrand": true
+    }
+  }
+}
