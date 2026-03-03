@@ -1,19 +1,44 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName="Home" %}
+{% set pageName="Childcare entitlement checker" %}
 
 {% block content %}
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-
-    {% include "govuk-prototype-kit/includes/homepage-top.njk" %}
-
+  <div class="govuk-grid-column-full">
     <h1 class="govuk-heading-xl">
       {{ serviceName }}
     </h1>
+    <table class="govuk-table govuk-table--small-text-until-tablet">
+      <caption class="govuk-table__caption govuk-table__caption--m">Beta</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Version</th>
+          <th scope="col" class="govuk-table__header">UR</th>
+          <th scope="col" class="govuk-table__header">Description</th>
+          <th scope="col" class="govuk-table__header">Status</th>
+          <th scope="col" class="govuk-table__header">Last updated</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">
+            <p class="govuk-body"><a href="/v1/start-page" class="govuk-link">V1</a></p>
+          </th>
+          <td class="govuk-table__cell"><a
+              href="https://educationgovuk.sharepoint.com/:w:/r/sites/Vulnerablechildrenandfamiliesportfolio/Shared%20Documents/Accessing%20Childcare%20-%20Main%20Channel/ALPHA/Research/3.%20Fieldwork/Round%201/Discussion%20Guide%20Round%201%20-%20beta.docx?d=wf44d5c5bec7240358f07b9709da65861&csf=1&web=1&e=dR3bye"
+              class="govuk-link" rel="noreferrer noopener" target="_blank">Discussion guide</a></td>
+          <td class="govuk-table__cell">We are testing the Add Children flow within the service, where users can add all
+            of their children. Our focus is specifically on how users add children they are expecting, ensuring the
+            process is clear and easy to complete.</td>
+          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">
+              In UR
+            </strong></td>
+          <td class="govuk-table__cell">March 2nd 2026</td>
 
-    {% include "govuk-prototype-kit/includes/homepage-bottom.njk" %}
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>
 
